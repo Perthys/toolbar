@@ -119,7 +119,7 @@ function Button:Destroy()
     return Object:Destroy();
 end
 
-function Button:SetTitle(Title)
+function Button:SetTitle(self, Title)
     local Object = self.Object;
 
     Object.Text = Title;
