@@ -124,3 +124,5 @@ function Button:SetTitle(Title)
 
     Object.Text = Title;
 end
+
+return Toolbar;
