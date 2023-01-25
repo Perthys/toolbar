@@ -78,9 +78,9 @@ function Toolbar:Destroy()
     Object:Destroy();
 end
 
-function Toolbar:SetTitle(Title)
+function Toolbar:SetTitle(TitleText)
     local Title = self.Title;
-    Title.Text = ("<b>%s</b>"):format(Title);
+    Title.Text = ("<b>%s</b>"):format(TitleText);
 end
 
 function Toolbar:AddButton(Data)
@@ -119,7 +119,7 @@ function Button:Destroy()
     return Object:Destroy();
 end
 
-function Button:SetTitle(self, Title)
+function Button:SetTitle(Title)
     local Object = self.Object;
 
     Object.Text = Title;
