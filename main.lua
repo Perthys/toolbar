@@ -24,6 +24,8 @@ function Toolbar.new(Name)
     local self = setmetatable({
         Name = Name;
     }, Toolbar)
+    
+    self.Buttons = {};
 
     local MainUI = Instance.new("Frame"); self.Object = MainUI
     MainUI["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -88,7 +90,7 @@ function Toolbar:AddButton(Data)
     local Text = Data.Name
     local _self = setmetatable(Data, Button)
 
-    self[Text] = _self;
+    self.Buttons[Text] = _self;
     local TextButton = Instance.new("TextButton"); _self.Object = TextButton
     TextButton["TextWrapped"] = true;
     TextButton["RichText"] = true;
