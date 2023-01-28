@@ -99,7 +99,7 @@ function Toolbar:AddButton(Data)
     TextButton["BackgroundColor3"] = Color3.fromRGB(0, 201, 255);
     TextButton["TextColor3"] = Color3.fromRGB(255, 255, 255);
     TextButton["Size"] = UDim2.new(0.8999999761581421, 0, 0, 14);
-    TextButton["Text"] = [[Follow Unit]];
+    TextButton["Text"] = Text;
     TextButton["Font"] = Enum.Font.Gotham;
     TextButton.Parent = self.Object
 
