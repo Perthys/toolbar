@@ -45,6 +45,7 @@ function Toolbar.new(Name)
     Title["Text"] = ("<b>%s</b>"):format(Name);
     Title["Font"] = Enum.Font.Gotham;
     Title["BackgroundTransparency"] = 1;
+    Title.TextScaled = true
     Title.Parent = MainUI;
 
     local Corner = Instance.new("UICorner");
