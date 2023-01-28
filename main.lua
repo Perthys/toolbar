@@ -89,6 +89,7 @@ end
 function Toolbar:AddButton(Data)
     local Text = Data.Name
     local _self = setmetatable(Data, Button)
+    _self.Parent = self;
 
     self.Buttons[Text] = _self;
     local TextButton = Instance.new("TextButton"); _self.Object = TextButton
