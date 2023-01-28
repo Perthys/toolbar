@@ -72,7 +72,7 @@ end
 function Toolbar:Toggle(Bool)
     local Object = self.Object;
 
-    Object.Visible = Bool or true;
+    Object.Visible = Bool;
 end
 
 function Toolbar:Destroy()
