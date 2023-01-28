@@ -88,6 +88,7 @@ function Toolbar:AddButton(Data)
     local Text = Data.Name
     local _self = setmetatable(Data, Button)
 
+    self[Text] = _self;
     local TextButton = Instance.new("TextButton"); _self.Object = TextButton
     TextButton["TextWrapped"] = true;
     TextButton["RichText"] = true;
