@@ -111,7 +111,6 @@ function Toolbar:AddButton(Data)
         local Conncetion = TextButton.MouseButton1Click:Connect(function()
             _self:OnClicked()
         end)
-        print(Conncetion)
         AddSignal(Conncetion)
     end
 
